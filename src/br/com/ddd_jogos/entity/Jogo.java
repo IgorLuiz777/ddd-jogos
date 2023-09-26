@@ -1,27 +1,27 @@
 package br.com.ddd_jogos.entity;
 
 public class Jogo {
-    private String titulo;
-    private String date;
+    private String name;
+    private String released;
     private String genero;
-    private String desenvolvedora;
+    private String developers;
     private String id;
     private double nota;
 
-    public String getTitulo() {
-        return titulo;
+    public String getName() {
+        return name;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDate() {
-        return date;
+        return released;
     }
 
     public void setDate(String date) {
-        this.date = date;
+        this.released = date;
     }
 
     public String getGenero() {
@@ -32,12 +32,12 @@ public class Jogo {
         this.genero = genero;
     }
 
-    public String getDesenvolvedora() {
-        return desenvolvedora;
+    public String getDevelopers() {
+        return developers;
     }
 
-    public void setDesenvolvedora(String desenvolvedora) {
-        this.desenvolvedora = desenvolvedora;
+    public void setDevelopers(String developers) {
+        this.developers = developers;
     }
 
     public String getId() {
@@ -54,5 +54,17 @@ public class Jogo {
 
     public void setNota(double nota) {
         this.nota = nota;
+    }
+
+    @Override
+    public String toString() {
+        return "Jogo{" +
+                "Título='" + name + '\'' +
+                ", date='" + released + '\'' +
+                ", genero='" + genero + '\'' +
+                ", desenvolvedora='" + developers + '\'' +
+                ", id='" + id + '\'' +
+                ", nota=" + nota +
+                '}';
     }
 }
