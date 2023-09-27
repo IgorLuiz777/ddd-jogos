@@ -1,10 +1,12 @@
 package br.com.ddd_jogos.entity;
 
+import java.util.List;
+
 public class Jogo {
     private String name;
     private String released;
-    private String genero;
-    private String developers;
+    private List<Genre> genres;
+    private List<Developer> developers;
     private String id;
     private double nota;
 
@@ -24,19 +26,19 @@ public class Jogo {
         this.released = date;
     }
 
-    public String getGenero() {
-        return genero;
+    public List<Genre> getGenres() {
+        return genres;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
+    public void setGenres(List<Genre> genres) {
+        this.genres = genres;
     }
 
-    public String getDevelopers() {
+    public List<Developer> getDevelopers() {
         return developers;
     }
 
-    public void setDevelopers(String developers) {
+    public void setDevelopers(List<Developer> developers) {
         this.developers = developers;
     }
 
@@ -52,6 +54,14 @@ public class Jogo {
         return nota;
     }
 
+    public String getReleased() {
+        return released;
+    }
+
+    public void setReleased(String released) {
+        this.released = released;
+    }
+
     public void setNota(double nota) {
         this.nota = nota;
     }
@@ -61,7 +71,7 @@ public class Jogo {
         return "Jogo{" +
                 "Título='" + name + '\'' +
                 ", date='" + released + '\'' +
-                ", genero='" + genero + '\'' +
+                ", genero='" + genres + '\'' +
                 ", desenvolvedora='" + developers + '\'' +
                 ", id='" + id + '\'' +
                 ", nota=" + nota +

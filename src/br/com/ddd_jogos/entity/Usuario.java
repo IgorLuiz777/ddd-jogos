@@ -1,6 +1,6 @@
 package br.com.ddd_jogos.entity;
 
-public class Cliente {
+public class Usuario {
     private String nome;
     private String email;
     private String senha;
