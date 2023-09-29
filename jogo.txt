@@ -1,0 +1,12 @@
+Informações do Jogo:
+Título: Fallout: New Vegas
+Data de Lançamento: 2010-10-19
+Gêneros: Action e Shooter e Adventure e RPG
+Desenvolvedores: Obsidian Entertainment
+ID: 5563
+Informações do Jogo:
+Título: Starfield
+Data de Lançamento: 2023-09-06
+Gêneros: Adventure e RPG
+Desenvolvedores: Bethesda Game Studios
+ID: 58779
